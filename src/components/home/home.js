@@ -10,6 +10,7 @@ class Home extends Component {
         return (
             <section>
                 <Container fluid className="miniVan">
+                    <Container>
                     <Row className="align-self-center text-left">
                         <Col id="homeContainer">
                             <h1>
@@ -27,9 +28,8 @@ class Home extends Component {
                                 Plan your trip
                             </Button>
                         </Col>
-                        <Col>
-                        </Col>
                     </Row>
+                    </Container>
                 </Container>
             </section>
         );

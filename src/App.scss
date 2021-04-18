@@ -54,7 +54,7 @@ h2 {
 }
 
 .miniVan {
-  padding: 150px 0 150px 150px;
+  padding: 110px 0 110px 110px;
   background-image: $home-minivan;
   background-position: 100% 0;
   background-size: 50%;
@@ -87,7 +87,7 @@ h2 {
 }
 
 //Join Page component
-#joinPageContainer {
+.joinPageContainer {
   background-image: url("./assets/img/World_map_with_points.svg"), linear-gradient(to bottom right, #9172B3, #DD5981);
   height: 800px;
   background-size: cover;
@@ -98,18 +98,18 @@ h2 {
   color: white;
 }
 
-#gradient {
-  height: 800px;
-  background-color: mix($startColor, $endColor, 60%); // fallback
-  background-image: $image; // fallback
-
-  background: $image, -moz-linear-gradient(to bottom right, $startColor, $endColor); // FF 3.6+
-  background: $image, -webkit-gradient(to bottom right, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
-  background: $image, -webkit-linear-gradient(to bottom right, $startColor, $endColor); // Safari 5.1+, Chrome 10+
-  background: $image, -o-linear-gradient(to bottom right, $startColor, $endColor); // Opera 11.10
-  background: $image, linear-gradient( to bottom right, $startColor, $endColor); // Standard, IE10
-  background-repeat: no-repeat, repeat;
-}
+//#gradient {
+//  height: 800px;
+//  background-color: mix($startColor, $endColor, 60%); // fallback
+//  background-image: $image; // fallback
+//
+//  background: $image, -moz-linear-gradient(to bottom right, $startColor, $endColor); // FF 3.6+
+//  background: $image, -webkit-gradient(to bottom right, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+//  background: $image, -webkit-linear-gradient(to bottom right, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+//  background: $image, -o-linear-gradient(to bottom right, $startColor, $endColor); // Opera 11.10
+//  background: $image, linear-gradient( to bottom right, $startColor, $endColor); // Standard, IE10
+//  background-repeat: no-repeat, repeat;
+//}
 
 //blog component
 .card-title {
