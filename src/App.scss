@@ -1,0 +1,148 @@
+@import "~bootstrap/scss/bootstrap";
+
+$mynewcolor:#F36888;
+$h1-font-size:50px;
+$h2-font-size:30px;
+$h1-font-weight:900;
+$h2-font-weight:700;
+$startColor:#9172B3;
+$endColor:#DD5981;
+$image:url("./assets/img/World_map_with_points.svg");
+$home-minivan:url("./assets/img/Arches-National-Park-by-Dino-Reichmuth.jpg");
+$standingWaterfall:url("./assets/img/man_standing_near_waterfall.jpg");
+
+body {
+  font-family: Quicksand, sans-serif;
+  line-height: 1.5;
+}
+
+.btn-primary {
+  @include button-variant($mynewcolor, darken($mynewcolor, 7.5%), darken($mynewcolor, 10%), lighten($mynewcolor,5%), lighten($mynewcolor, 10%), darken($mynewcolor,30%));
+}
+
+.btn-outline-primary {
+  @include button-outline-variant($mynewcolor, #222222, lighten($mynewcolor,5%), $mynewcolor);
+  color: #222222;
+}
+
+.navbar {
+  height: 100px;
+  padding: 0 150px 0 150px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #222222!important;
+}
+
+h1 {
+  font-weight: $h1-font-weight;
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+}
+
+//Home component
+#destinationBtn, #tripBtn {
+  border-radius: 25px;
+}
+#tripBtn {
+  margin-left: 15px;
+}
+
+.miniVan {
+  padding: 150px 0 150px 150px;
+  background-image: $home-minivan;
+  background-position: 100% 0;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+#homeContainer {
+  width: 500px;
+}
+
+//Offer component
+.standingWaterFall {
+  padding: 150px 150px 150px 150px;
+  background-image: $standingWaterfall;
+  background-position: 0 100%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+#offerContainer {
+  width: 500px;
+}
+.weCanOffer {
+  padding: 110px 110px 50px 110px;
+}
+
+.card {
+  height: 200px;
+  padding: 40px;
+  border: 0;
+}
+
+//Join Page component
+#joinPageContainer {
+  background-image: url("./assets/img/World_map_with_points.svg"), linear-gradient(to bottom right, #9172B3, #DD5981);
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+}
+
+#joinH1 {
+  color: white;
+}
+
+#gradient {
+  height: 800px;
+  background-color: mix($startColor, $endColor, 60%); // fallback
+  background-image: $image; // fallback
+
+  background: $image, -moz-linear-gradient(to bottom right, $startColor, $endColor); // FF 3.6+
+  background: $image, -webkit-gradient(to bottom right, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+  background: $image, -webkit-linear-gradient(to bottom right, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+  background: $image, -o-linear-gradient(to bottom right, $startColor, $endColor); // Opera 11.10
+  background: $image, linear-gradient( to bottom right, $startColor, $endColor); // Standard, IE10
+  background-repeat: no-repeat, repeat;
+}
+
+//blog component
+.card-title {
+  font-weight: 600;
+}
+.card-footer {
+  padding: 0;
+  background: 0;
+  border: 0;
+}
+
+.main-img{
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+}
+.sm-img{
+  height: 130px;
+  width: 110px;
+  border-radius: 10px;
+}
+
+//footer component
+#footerRow {
+  border-top: 1px solid #dee2e6 !important;
+  //padding: 0 150px 0 150px;
+}
+
+.footer {
+  color: gray;
+  padding: 50px 0 20px 0;
+}
+
+.nav-link {
+  color: #222222;
+}
