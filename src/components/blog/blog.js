@@ -6,6 +6,8 @@ import Card from "react-bootstrap/cjs/Card";
 import CardImg from "react-bootstrap/cjs/CardImg";
 import grassland from "../../assets/img/grassland.jpg";
 import earthShot from "../../assets/img/Earthshot-david-marcu-JasperNationalParkCanada-sq.jpg";
+import denmark from "../../assets/img/Denmark-Copenhagen-1024x683.jpg";
+import backing from "../../assets/img/tyson-dudley-vd7kvuDauoM-unsplash-1024x683.jpg";
 
 class Blog extends Component {
     render() {
@@ -66,7 +68,7 @@ class Blog extends Component {
                                 <Card>
                                     <Row>
                                         <Col lg={4}>
-                                            <CardImg className="sm-img" src={grassland}/>
+                                            <CardImg className="sm-img" src={denmark}/>
                                         </Col>
                                         <Col>
                                             <Row>
@@ -88,7 +90,7 @@ class Blog extends Component {
                                 <Card>
                                     <Row>
                                         <Col lg={4}>
-                                            <CardImg className="sm-img" src={grassland}/>
+                                            <CardImg className="sm-img" src={backing}/>
                                         </Col>
                                         <Col>
                                             <Row>
